@@ -4,9 +4,9 @@
     id="com.zyen.openinbrowser"
     version="0.2.11">
     <name>OpenInBrowser</name>
-    <description>The coolest Plugin ever implemented</description>
+    <description>Open a URL using system browser</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,coolest</keywords>
+    <keywords>cordova,url,system,browser</keywords>
     <repo></repo>
     <issue></issue>
 
@@ -24,4 +24,14 @@
         <source-file src="src/android/OpenInBrowser.java" target-dir="src/" />
     </platform>
 
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="OpenInBrowser" >
+                <param name="ios-package" value="OpenInBrowser"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/OpenInBrowser.m" />
+        <header-file src="src/ios/OpenInBrowser.h" />
+    </platform>
 </plugin>
