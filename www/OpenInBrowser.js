@@ -6,9 +6,9 @@ function OpenInBrowser() {
 
 OpenInBrowser.prototype.open = function(url) {
     exec(function(result) {
-        // Success callback
+        console.log(result)
     }, function(result) {
-        // Error callback
+        console.log(result)
     }, "OpenInBrowser", "openInBrowser", [url]);
 };
 

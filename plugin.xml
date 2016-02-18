@@ -26,7 +26,7 @@
 
     <!-- ios -->
     <platform name="ios">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="OpenInBrowser" >
                 <param name="ios-package" value="OpenInBrowser"/>
             </feature>
