@@ -4,6 +4,6 @@
 
 @interface OpenInBrowser : CDVPlugin
 
-- (void)OpenInBrowser:(CDVInvokedUrlCommand*)command;
+- (void)openInBrowser:(CDVInvokedUrlCommand*)command;
 
 @end
